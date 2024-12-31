@@ -1,0 +1,28 @@
+.p-menu {
+    width: 250px;
+    background-color: #f4f4f4;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .p-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .p-menu li {
+    cursor: pointer;
+    margin: 15px 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .p-menu li:hover {
+    color: #3498db;
+  }
+  
+  .p-menu li svg {
+    margin-right: 10px;
+  }
+  

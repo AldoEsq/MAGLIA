@@ -1,0 +1,119 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  overflow: hidden; 
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  animation: fadeIn 1.5s forwards;
+}
+
+.rectangulo_central {
+  position: absolute;
+  background-color: rgb(236, 236, 236);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.684);
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100% 5px;
+  color: black;
+}
+
+.rectangulo_central .logo img {
+  max-width: 180px;
+  margin-bottom: 20px;
+}
+
+.Izquierda,
+.Derecha {
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.684);
+  width: 30%; 
+  height: auto; 
+  overflow: hidden; 
+  z-index: -1; 
+  
+}
+
+.Izquierda {
+  left: 65px; 
+}
+
+.Derecha {
+  right:65px; 
+}
+
+/* Videos en los costados */
+.Izquierda video,
+.Derecha video {
+  width: 100%; 
+  height: auto; /* Preserva proporciones */
+  object-fit: cover; /* Llena el contenedor sin distorsionar */
+}
+
+
+.video {
+  padding: 0px 0px;
+  object-fit: cover;
+}
+
+.social-buttonss {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.instagram-btn {
+  background-color: #E4405F;
+}
+
+.instagram-btn:hover {
+  background-color: #CC3553;
+  transform: scale(1.1);
+}
+
+.facebook-btnn {
+  background-color: #4267B2;
+}
+
+.facebook-btnn:hover {
+  background-color: #365899;
+  transform: scale(1.1);
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1EBE58;
+  transform: scale(1.1);
+}
